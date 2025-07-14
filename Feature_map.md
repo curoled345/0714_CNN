@@ -3,7 +3,27 @@
 커널과 3x3 영역의 곱을 계산해 봅니다:
 
 \[
-(1 \times -1) + (1 \times 0) + (1 \times 1) + (1 \times -1) + (1 \times 0) + (0 \times 1) + (1 \times -1) + (0 \times 0) + (0 \times 1) = -2
+\begin{bmatrix}
+1 & 1 & 1 \\
+1 & 1 & 0 \\
+1 & 0 & 0
+\end{bmatrix}
+\ast
+\begin{bmatrix}
+-1 & 0 & 1 \\
+-1 & 0 & 1 \\
+-1 & 0 & 1
+\end{bmatrix}
+=
+\begin{bmatrix}
+(1 \times -1) + (1 \times 0) + (1 \times 1) \\
+(1 \times -1) + (1 \times 0) + (0 \times 1) \\
+(1 \times -1) + (0 \times 0) + (0 \times 1)
+\end{bmatrix}
+=
+\begin{bmatrix}
+-2
+\end{bmatrix}
 \]
 
 따라서, (2,2) 위치에서 나온 값은 `-2`입니다.
